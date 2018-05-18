@@ -1,0 +1,24 @@
+<div class="d-flex flex-row">
+  <div class="d-flex flex-column border rounded mr-3">
+
+    <h1 class="mx-3 mb-2 border-bottom border-info" [innerHTML]="randomHeaderOne"></h1>
+
+    <app-loader class="p-4 mx-3 mb-2 rounded bg-light" *ngIf="!randomTxt"></app-loader>
+
+    <div *ngIf="randomTxt" class="p-4 mx-3 mb-2 rounded bg-light app-content"
+      [innerHTML]="randomTxt">
+    </div>
+
+    <app-loader class="p-4 mx-3 mb-2 erounded bg-light" *ngIf="!randomTxt"></app-loader>
+
+    <div *ngIf="randomTxt" class="p-4 mx-3 mb-2 rounded bg-light app-content"
+      [innerHTML]="randomTxt">
+    </div>
+
+    <app-pictures></app-pictures>
+
+  </div>
+  <div class="d-flex flex-column w-25 app-content app-badge">
+    <div class="" [innerHTML]="randomTxt"></div>
+  </div>
+</div>

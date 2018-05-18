@@ -4,12 +4,11 @@ import { HttpClient } from '@angular/common/http';
 @Injectable()
 export class TextService {
 
-  constructor(private http: HttpClient){
-    // console.log("hello from text service",
-  }
+  URL = "http://www.randomtext.me/api/lorem/";
 
-  get(options){
-    return this.http.get('http://www.randomtext.me/api/lorem/p-5/20-35');
-  }
+  constructor(private http: HttpClient){}
 
+  get(requestString: string){
+    return this.http.get(`${this.URL}${requestString}`);
+  }
 }

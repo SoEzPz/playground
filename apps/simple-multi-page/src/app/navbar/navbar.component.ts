@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { TextService } from '@playground/random-text';
 
 @Component({
   selector: 'app-navbar',
@@ -8,13 +7,14 @@ import { TextService } from '@playground/random-text';
 })
 export class NavbarComponent implements OnInit {
 
-  randomTxt;
-  constructor(txt: TextService) {
-    txt.get('hello').subscribe((res: any) => {
-      console.log('response: ', res)
-      this.randomTxt = res.text_out
-    });
-  }
+  navBgColor = 'bg-info';
+  
+  constructor() {}
 
   ngOnInit() {}
+
+  changeColor(value){
+    console.log('changing color: ', typeof value);
+    this.navBgColor = value;
+  }
 }

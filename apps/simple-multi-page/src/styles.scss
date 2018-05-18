@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+.app-content {
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  &.app-badge {
+    p {
+      color: #FFF;
+      padding: 1rem!important;
+      background-color: #343a40!important;
+      border-radius: .25rem!important;
+    }
+  }
+}
+
+.pictures {
+  img {
+    width: 80%;
+  }
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+.bg-purple {
+  background: #563d7c;
+}
