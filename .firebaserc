@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "simple-multi-page",
+    "staging": "simple-multi-page"
+  }
+}

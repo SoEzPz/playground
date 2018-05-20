@@ -1,22 +1,30 @@
 <nav class="navbar navbar-expand-lg navbar-dark" [ngClass]="navBgColor">
   <a routerLink="home" class="navbar-brand">Simplapp</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="navbar-toggler" type="button"
+    data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false"
+    aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <div class="collapse navbar-collapse">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" routerLink="home" routerLinkActive="active">Home</a>
+        <a class="nav-link" routerLink="home" routerLinkActive="active">
+          Home
+        </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" routerLink="/form">Form</a>
+        <a class="nav-link" routerLink="/form">
+          Form
+        </a>
       </li>
     </ul>
 
     <span class="text-white mr-1">
       Select Navbar Color:
     </span>
+
     <div class="input-group w-25">
       <select class="custom-select" (change)="changeColor($event.target.value)">
         <option value="bg-info" selected>Light Blue</option>
