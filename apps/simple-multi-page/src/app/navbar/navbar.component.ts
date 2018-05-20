@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class NavbarComponent implements OnInit {
 
   navBgColor = 'bg-info';
-  
+
   constructor() {}
 
   ngOnInit() {}
@@ -16,5 +16,9 @@ export class NavbarComponent implements OnInit {
   changeColor(value){
     console.log('changing color: ', typeof value);
     this.navBgColor = value;
+  }
+
+  setActive(e){
+    console.log('event here: ', e);
   }
 }
